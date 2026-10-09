@@ -1,8 +1,8 @@
 # GuidedNav project website
 
-[Project page](https://jingyu198.github.io/GuidedNav/) · [Research code and release plan](https://github.com/jingyu198/GuidedNav-code)
+[Project page](https://jingyu198.github.io/GuidedNav/) · [Research code and release plan](https://github.com/jingyu198/Guided-Nav)
 
-This repository hosts the GuidedNav project website. The separate **GuidedNav-code** repository is reserved for model checkpoints, inference code, datasets, and training code.
+This repository hosts the GuidedNav project website. The separate **Guided-Nav** repository is reserved for model checkpoints, inference code, datasets, and training code.
 
 ## Website maintenance
 
