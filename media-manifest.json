@@ -1,0 +1,38 @@
+{
+  "source_video": "ICLR_Videos/Real_world_Rollout/Real_Robot_Representations_Final.mp4",
+  "split_segments": [
+    {
+      "file": "real-staircase.mp4",
+      "task": "Staircase",
+      "source_start_seconds": 0,
+      "source_end_seconds": 28.5,
+      "duration_seconds": 28.5
+    },
+    {
+      "file": "real-vending.mp4",
+      "task": "Vending machine",
+      "source_start_seconds": 28.5,
+      "source_end_seconds": 47,
+      "duration_seconds": 18.5
+    },
+    {
+      "file": "real-sofa.mp4",
+      "task": "Blue sofa",
+      "source_start_seconds": 47,
+      "source_end_seconds": 79.5,
+      "duration_seconds": 32.5
+    },
+    {
+      "file": "real-coffee-task.mp4",
+      "task": "Coffee machine",
+      "source_start_seconds": 79.5,
+      "source_end_seconds": 100.2,
+      "duration_seconds": 20.7
+    }
+  ],
+  "other_selected_videos": [
+    "Simulator_Rollout/R2R_success_1190_Sofa_dining_table_doormat.mp4",
+    "Guided_R2R/R2R_002580_Multi_room_navigation.mp4",
+    "Guided_RxR/RxR_056445_Laundry_kitchen_bedroom.mp4"
+  ]
+}

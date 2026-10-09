@@ -2,9 +2,8 @@
 
 Public URL: https://jingyu198.github.io/GuidedNav/
 
-The page contains the paper title, authors and affiliations, the three guidance
-designs, the original research figures, six local demonstration videos, selected
-benchmark comparisons, inference efficiency, and a copyable BibTeX entry.
+The page contains the paper title, authors and affiliations, the original research figures, seven selected demonstration videos, original
+benchmark tables and plots from the paper, and a copyable BibTeX entry.
 Paper, code and dataset resources are marked forthcoming until their release
 URLs are available. No arXiv identifier or conference acceptance is assumed.
 
@@ -30,3 +29,17 @@ point differences.
 
 Credentials are managed outside this repository. No password, access token,
 local credential helper path or private source paths belong in tracked files.
+
+## Selected demonstration media
+
+The four real-world task clips are split from the selected 100.2-second
+`Real_Robot_Representations_Final.mp4`. Task boundaries are 0, 28.5, 47.0,
+79.5 and 100.2 seconds. Each clip retains the original recording, representation
+overlays and soundtrack. `media-manifest.json` records the segment boundaries.
+The simulator, Guided-R2R and Guided-RxR demos are the selected source files
+and are copied without modification.
+
+The headline wordmark combines cute hand-lettered GuidedNav lettering with an
+AgiBot X2-inspired cartoon mascot. Overview and Method use one figure and a
+short explanation beneath it. Benchmark results reproduce the source paper's
+Table 1, Figure 4 and Table 2 instead of reconstructing their data in HTML.
