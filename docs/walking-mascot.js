@@ -202,7 +202,7 @@
     ctx.strokeStyle = '#6e7c86';
     ctx.lineWidth = 1.1;
     ctx.stroke();
-    ellipse(ctx, 93, 91 + bob, 1.5, 2.3, '#6cdde7');
+    ellipse(ctx, 93, 91 + bob, 1.5, 2.3, '#7eb1ff');
   }
 
   function head(ctx, bob, phase) {
@@ -260,9 +260,9 @@
     ctx.stroke();
 
     ctx.save();
-    ctx.shadowColor = '#44e1f1';
+    ctx.shadowColor = '#64a8ff';
     ctx.shadowBlur = 5;
-    ctx.strokeStyle = '#55e5ef';
+    ctx.strokeStyle = '#80c1ff';
     ctx.lineWidth = 3.4;
     ctx.lineCap = 'round';
     ctx.beginPath();
@@ -282,7 +282,7 @@
     ellipse(ctx, 48, 47, 7, 12, '#242e37', '#6c7b88');
     ctx.beginPath();
     ctx.ellipse(48, 47, 4.6, 8.7, -0.08, 0, TAU);
-    ctx.strokeStyle = '#44cddf';
+    ctx.strokeStyle = '#5997ef';
     ctx.lineWidth = 1.5;
     ctx.stroke();
     ellipse(ctx, 47.5, 46.5, 2.6, 6.4, '#172732');
@@ -294,8 +294,8 @@
     ctx.clearRect(0, 0, WIDTH, HEIGHT);
     const bob = reduced ? 0 : -1.5 + 1.1 * Math.cos(phase * TAU * 2);
     const shadow = ctx.createRadialGradient(82, 177, 2, 82, 177, 39);
-    shadow.addColorStop(0, 'rgba(12,76,91,.15)');
-    shadow.addColorStop(1, 'rgba(12,76,91,0)');
+    shadow.addColorStop(0, 'rgba(31,62,112,.15)');
+    shadow.addColorStop(1, 'rgba(31,62,112,0)');
     ellipse(ctx, 82, 177, 39, 5.5, shadow);
     const farPhase = (phase + 0.5) % 1;
     const farStep = step(farPhase, 163);
