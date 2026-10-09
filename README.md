@@ -1,53 +1,63 @@
-# GuidedNav project website
+# GuidedNav: Shaping Vision-Language Navigation Representations through Pre-Action Attention and Spatial Guidance
 
-Public URL: https://jingyu198.github.io/GuidedNav/
+**[Jingyu Guo](https://jingyu198.github.io/jingyu.github.io/), [Jiaxin Huang](https://huangjiaxin.mystrikingly.com/), [Chengxing Lin](https://linchengxing.github.io/), [Xiaoyu Luo](https://scholar.google.com/citations?view_op=search_authors&mauthors=Xiaoyu+Luo+University+of+Macau&hl=en), [Cheng Wen](https://scholar.google.com/citations?view_op=search_authors&mauthors=Cheng+Wen+AGIBOT&hl=en), [Shanshan Ye](https://cassie133ye.github.io/), [Tingjin Chu](https://findanexpert.unimelb.edu.au/profile/795463-tingjin-chu), [Shaoli Huang](https://shaoli-huang.github.io/), [Mingming Gong](https://mingming-gong.github.io/)**
 
-The page contains the paper title, authors and affiliations, the original research figures, eight demonstration videos, original
-benchmark tables and plots from the paper, and a copyable BibTeX entry.
-Paper, code and dataset resources are marked forthcoming until their release
-URLs are available. No arXiv identifier or conference acceptance is assumed.
+Jiaxin Huang is the project leader. Shaoli Huang and Mingming Gong are the corresponding authors.
 
-## Update the page
+[Project page & demos](https://jingyu198.github.io/GuidedNav/) · [Release plan](#release-plan) · [Citation](#citation)
 
-- Edit `app/homepage.html` for page content.
-- Edit `app/globals.css` for styling.
-- Store figures, posters and videos in `public/assets/`.
-- Run `npm run build` to validate the Sites development project.
-- Run `npm run export:pages` to regenerate the self-contained GitHub Pages
-  output in `docs/`.
-- Commit the updated source and `docs/`, then push `main`.
+## Overview
 
-GitHub Pages publishes `main` from `/docs`. Asset paths are relative so the site
-works under `/GuidedNav/`. The page uses native video controls, requests no
-video preload, and does not include analytics or external fonts.
+[![GuidedNav overview: subtask, landmark, and spatial guidance](docs/assets/overview.webp)](https://jingyu198.github.io/GuidedNav/)
 
-The navigation rollout videos are decision-level visualizations, not real-time
-camera recordings. The dataset videos display expert observations and generated
-annotations. Quantitative benchmark values and the abstract match the supplied
-manuscript. Relative success-rate improvements are distinct from percentage
-point differences.
+GuidedNav shapes the representations that connect instructions to navigation actions through three complementary designs:
 
-Credentials are managed outside this repository. No password, access token,
-local credential helper path or private source paths belong in tracked files.
+- **Subtask guidance** directs native pre-action attention toward the active instruction segment.
+- **Landmark guidance** grounds attention in visual regions relevant to the current objective.
+- **Spatial guidance** transfers geometric information into the policy during training.
 
-## Selected demonstration media
+The learned policy predicts actions directly at inference. We also introduce **Guided-R2R** and **Guided-RxR**, annotation-enriched datasets with subtask intervals and landmark annotations.
 
-The four real-world task clips are split from the selected 100.2-second
-`Real_Robot_Representations_Final.mp4`. Task boundaries are 0, 28.5, 47.0,
-79.5 and 100.2 seconds. Each clip retains the original recording, representation
-overlays and soundtrack. `media-manifest.json` records the segment boundaries.
-The simulator, Guided-R2R and Guided-RxR demos are the selected source files
-and are copied without modification.
+Visit the [project page](https://jingyu198.github.io/GuidedNav/) for the method, original benchmark results, real-world demonstrations, and simulator rollouts.
 
-The headline wordmark combines cute hand-lettered GuidedNav lettering with an
-AgiBot X2-inspired cartoon mascot. Overview and Method use one figure and a
-short explanation beneath it. Benchmark results reproduce the source paper's
-Table 1, Figure 4 and Table 2 instead of reconstructing their data in HTML.
+## Release plan
 
-Current caption update: real-world and simulator clips display their original
-English model instructions without rewritten descriptions. Simulator videos
-currently include R2R episodes 1190 and 1288. Two RxR model rollout videos
-remain unavailable in the supplied local captures; expert annotation videos
-are kept in the dataset section. Result images retain their original embedded
-paper titles without additional HTML captions. GuidedNav uses smaller orderly
-lettering with dimensional teal coloring; only its greeting mascot loops.
+The research artifacts are being prepared for release. This repository currently contains the project website; the four artifacts below are **not yet released**.
+
+| Artifact | Planned contents | Status |
+| --- | --- | --- |
+| **Checkpoints (ckpts)** | GuidedNav policy checkpoints and associated configurations for R2R-CE and RxR-CE. | Planned |
+| **Inference code** | Environment setup, checkpoint loading, navigation inference, and benchmark evaluation scripts. | Planned |
+| **Datasets** | Guided-R2R and Guided-RxR annotations, format documentation, and data preparation instructions. | Planned |
+| **Training code** | Training implementation, guidance objectives, configurations, and reproduction instructions. | Planned |
+
+Download links and usage instructions will be added here as each artifact is released.
+
+## Citation
+
+```bibtex
+@misc{guo2026guidednav,
+  title={GuidedNav: Shaping Vision-Language Navigation Representations
+         through Pre-Action Attention and Spatial Guidance},
+  author={Jingyu Guo and Jiaxin Huang and Chengxing Lin and Xiaoyu Luo
+          and Cheng Wen and Shanshan Ye and Tingjin Chu
+          and Shaoli Huang and Mingming Gong},
+  year={2026},
+  url={https://jingyu198.github.io/GuidedNav/}
+}
+```
+
+## Website maintenance
+
+- Edit `app/homepage.html` for page content and `app/globals.css` for styling.
+- Store figures, posters, videos, and the walking mascot script in `public/`.
+- Run `npm run build`, then `npm run export:pages` to regenerate `docs/`.
+- Commit the source and generated `docs/`, then push `main`.
+
+GitHub Pages publishes `main` from `/docs`. The site uses native video controls with no video preload. Benchmark figures reproduce the original paper tables and plots.
+
+The real-world clips display their original instructions. Simulator rollouts currently include R2R episodes 1190 and 1288; RxR model rollout captures are pending. Dataset annotation videos remain in the dataset section. `media-manifest.json` records the selected media and task boundaries.
+
+The GuidedNav wordmark uses orderly lettering with dimensional teal coloring and an AgiBot X2-inspired walking mascot.
+
+Xiaoyu Luo and Cheng Wen currently link to Google Scholar author searches; the other authors link to verified personal or university pages.

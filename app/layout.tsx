@@ -10,5 +10,5 @@ export const metadata: Metadata = {
   twitter: { card: 'summary_large_image', title, description, images: ['https://jingyu198.github.io/GuidedNav/og.png'] },
 };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return <html lang="en"><body>{children}<script src="./interaction.js" defer /></body></html>;
+  return <html lang="en"><body>{children}<script src="./interaction.js" defer /><script src="./walking-mascot.js" defer /></body></html>;
 }
