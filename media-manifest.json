@@ -34,5 +34,26 @@
     "Simulator_Rollout/R2R_success_1190_Sofa_dining_table_doormat.mp4",
     "Guided_R2R/R2R_002580_Multi_room_navigation.mp4",
     "Guided_RxR/RxR_056445_Laundry_kitchen_bedroom.mp4"
-  ]
+  ],
+  "real_instructions": {
+    "case1": "Go straight and stop in front of the stairs.",
+    "case2": "You are facing a row of lockers. Turn left and walk to the end of the lockers. Then turn right and stop in front of the vending machine.",
+    "case3": "You are facing several sofas. Walk straight past the sofas, turn left at the end, and stop in front of the blue sofa.",
+    "case4": "Walk past the orange chairs in front of you, then go straight and stop in front of the coffee machine."
+  },
+  "simulator_rollouts": [
+    {
+      "dataset": "R2R",
+      "episode_id": 1190,
+      "file": "simulation-selected.mp4",
+      "instruction": "walk towards yellow chair and turn right, walk past couch and straight through doorway towards dining table, walk on left side of dining table through double doors, walk over one doormat, stop on the second doormat."
+    },
+    {
+      "dataset": "R2R",
+      "episode_id": 1288,
+      "file": "simulation-r2r-1288.mp4",
+      "instruction": "Go into the arch and walk straight down the hallway until you get to the last door on the left. Go into the laundry room on the left and wait near the washer and dryer."
+    }
+  ],
+  "rxr_rollout_status": "Success records available locally; model rollout video capture not found."
 }

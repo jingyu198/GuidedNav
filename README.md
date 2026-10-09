@@ -2,7 +2,7 @@
 
 Public URL: https://jingyu198.github.io/GuidedNav/
 
-The page contains the paper title, authors and affiliations, the original research figures, seven selected demonstration videos, original
+The page contains the paper title, authors and affiliations, the original research figures, eight demonstration videos, original
 benchmark tables and plots from the paper, and a copyable BibTeX entry.
 Paper, code and dataset resources are marked forthcoming until their release
 URLs are available. No arXiv identifier or conference acceptance is assumed.
@@ -43,3 +43,11 @@ The headline wordmark combines cute hand-lettered GuidedNav lettering with an
 AgiBot X2-inspired cartoon mascot. Overview and Method use one figure and a
 short explanation beneath it. Benchmark results reproduce the source paper's
 Table 1, Figure 4 and Table 2 instead of reconstructing their data in HTML.
+
+Current caption update: real-world and simulator clips display their original
+English model instructions without rewritten descriptions. Simulator videos
+currently include R2R episodes 1190 and 1288. Two RxR model rollout videos
+remain unavailable in the supplied local captures; expert annotation videos
+are kept in the dataset section. Result images retain their original embedded
+paper titles without additional HTML captions. GuidedNav uses smaller orderly
+lettering with dimensional teal coloring; only its greeting mascot loops.
