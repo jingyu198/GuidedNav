@@ -33,3 +33,8 @@
 .project-name .walking-mascot-fallback{object-fit:contain}
 @media(max-width:640px){.walking-mascot{width:96px;height:112.8px}}
 @media(max-width:360px){.project-name .brand-text{font-size:36px}.walking-mascot{width:76px;height:89.3px}}
+
+/* Ordered section navigation and combined rollout groups. */
+nav a{white-space:nowrap;flex-shrink:0}
+.rollout-group-title{margin:0 0 14px}
+@media(max-width:640px){nav{justify-content:flex-start}}
