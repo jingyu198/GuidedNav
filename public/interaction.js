@@ -1,5 +1,19 @@
 (function () {
+  function setupSimulatorPlayback() {
+    document.querySelectorAll('.simulator-grid video').forEach(function (video) {
+      if (video.dataset.playbackReady) return;
+      video.dataset.playbackReady = 'true';
+      function useDoubleSpeed() {
+        video.defaultPlaybackRate = 2;
+        video.playbackRate = 2;
+      }
+      useDoubleSpeed();
+      video.addEventListener('loadedmetadata', useDoubleSpeed, { once: true });
+    });
+  }
+
   function setup() {
+    setupSimulatorPlayback();
     const button = document.getElementById('copy-bibtex');
     const code = document.getElementById('bibtex');
     const status = document.getElementById('copy-status');
