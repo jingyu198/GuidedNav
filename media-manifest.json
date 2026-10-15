@@ -5,8 +5,10 @@
       "file": "real-staircase.mp4",
       "task": "Staircase",
       "source_start_seconds": 0,
-      "source_end_seconds": 28.5,
-      "duration_seconds": 28.5
+      "source_end_seconds": 28.0,
+      "duration_seconds": 28.0,
+      "original_source_end_seconds": 28.5,
+      "end_trim_seconds": 0.5
     },
     {
       "file": "real-vending.mp4",
@@ -19,8 +21,10 @@
       "file": "real-sofa.mp4",
       "task": "Blue sofa",
       "source_start_seconds": 47,
-      "source_end_seconds": 79.5,
-      "duration_seconds": 32.5
+      "source_end_seconds": 79.0,
+      "duration_seconds": 32.0,
+      "original_source_end_seconds": 79.5,
+      "end_trim_seconds": 0.5
     },
     {
       "file": "real-coffee-task.mp4",
