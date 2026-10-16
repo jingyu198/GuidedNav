@@ -21,10 +21,10 @@
       "file": "real-sofa.mp4",
       "task": "Blue sofa",
       "source_start_seconds": 47,
-      "source_end_seconds": 79.0,
-      "duration_seconds": 32.0,
+      "source_end_seconds": 77.0,
+      "duration_seconds": 30.0,
       "original_source_end_seconds": 79.5,
-      "end_trim_seconds": 0.5
+      "end_trim_seconds": 2.5
     },
     {
       "file": "real-coffee-task.mp4",
